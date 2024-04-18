@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>НЕЙМАРК.Вход</title>
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.png">
+
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light sticky-top" style="margin-bottom: 200px;" data-navbar-darken-on-scroll="900">
+    <div class="container pt-2"><a class="navbar-brand" href="index.html"> <img style="width: 170px;"
+          src="./Images/неймарк.png" alt="..." /></a>
+    </div>
+  </nav>
+
+  <div class="wrapper" style="margin-top: -400px;">
+    <div class="title-text">
+      <div class="title login">Войти</div>
+      <div class="title signup">Присоеденится</div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Есть аккаунт</label>
+        <label for="signup" class="slide signup">Нет аккаунта</label>
+        <div class="slider-tab"></div>
+      </div>
+      <div class="form-inner">
+        <form action="#" class="login">
+          <div class="field">
+            <input type="text" id="userName" placeholder="Логин" required>
+          </div>
+          <div class="field">
+            <input type="password" id="pass" placeholder="Пароль" required>
+          </div>
+          <div id="err">
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" onclick="login()" value="Войти">
+          </div>
+          <div class="signup-link">Нет аккаунта? <a href="">Создать</a></div>
+        </form>
+        <form action="#" class="signup">
+          <div class="field">
+            <input type="text" id="newLog" placeholder="Логин" required>
+          </div>
+          <div class="field">
+            <input type="password" id="pass1" placeholder="Пароль" required>
+          </div>
+          <div class="field">
+            <input type="password" id="pass2" placeholder="Подтвердить Пароль" required>
+          </div>
+          <div id="err2">
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" onclick="reg()" value="Создать аккаунт">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="./assets/js/login.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/reg.js"></script>
+
+</html>
